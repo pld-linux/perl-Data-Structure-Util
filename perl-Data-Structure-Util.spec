@@ -29,13 +29,24 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Data::Structure::Util is a toolbox to manipulate data inside a data
 structure. It can parse an entire tree and perform the operation
-requested on each appropriate element. It can transform to utf8 any
-string within a data structure. I can attempts to transform any utf8
+requested on each appropriate element. It can transform to UTF-8 any
+string within a data structure. I can attempt to transform any UTF-8
 string back to default encoding either. It can remove the blessing on
 any reference. It can collect all the objects or detect if there is a
 circular reference.
 
 It is written in C for decent speed.
+
+%description -l pl
+Data::Structure::Util to zestaw narzêdzi do obróbki danych wewn±trz
+struktur danych. Mo¿e analizowaæ ca³e drzewo i wykonywaæ ¿±dane
+operacje na ka¿dym w³a¶ciwym elemencie. Mo¿e przekszta³caæ na UTF-8
+dowolny ³añcuch wewn±trz struktury danych, a tak¿e próbowaæ
+przekszta³ciæ dowolny ³añcuch z UTF-8 z powrotem do domy¶lnego
+kodowania.  Mo¿e usuwaæ b³ogos³awieñstwo z dowolnej referencji. Mo¿e
+zbieraæ wszystkie obiekty lub wykrywaæ czy s± zapêtlone referencje.
+
+Jest napisany w C w celu zapewnienia przyzwoitej szybko¶ci.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
