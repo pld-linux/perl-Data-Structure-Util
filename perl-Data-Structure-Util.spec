@@ -9,7 +9,7 @@ Summary:	Data::Structure::Util - Change nature of data within a structure
 Summary(pl):	Data::Structure::Util - Zmiana natury danych wewn±trz struktury
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.11
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -43,7 +43,7 @@ struktur danych. Mo¿e analizowaæ ca³e drzewo i wykonywaæ ¿±dane
 operacje na ka¿dym w³a¶ciwym elemencie. Mo¿e przekszta³caæ na UTF-8
 dowolny ³añcuch wewn±trz struktury danych, a tak¿e próbowaæ
 przekszta³ciæ dowolny ³añcuch z UTF-8 z powrotem do domy¶lnego
-kodowania.  Mo¿e usuwaæ b³ogos³awieñstwo z dowolnej referencji. Mo¿e
+kodowania. Mo¿e usuwaæ b³ogos³awieñstwo z dowolnej referencji. Mo¿e
 zbieraæ wszystkie obiekty lub wykrywaæ czy s± zapêtlone referencje.
 
 Jest napisany w C w celu zapewnienia przyzwoitej szybko¶ci.
@@ -64,7 +64,9 @@ Jest napisany w C w celu zapewnienia przyzwoitej szybko¶ci.
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	PERL_INSTALL_ROOT=$RPM_BUILD_ROOT 
+	PERL_INSTALL_ROOT=$RPM_BUILD_ROOT
+
+rm -f $RPM_BUILD_ROOT%{perl_vendorarch}/auto/Data/Structure/Util/.packlist
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -72,5 +74,10 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc CHANGES README
+%dir %{perl_vendorarch}/Data/Structure
 %{perl_vendorarch}/Data/Structure/Util.pm
+%dir %{perl_vendorarch}/auto/Data/Structure
+%dir %{perl_vendorarch}/auto/Data/Structure/Util
+%{perl_vendorarch}/auto/Data/Structure/Util/Util.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Data/Structure/Util/Util.so
 %{_mandir}/man3/*
