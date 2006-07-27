@@ -8,13 +8,13 @@
 Summary:	Data::Structure::Util - Change nature of data within a structure
 Summary(pl):	Data::Structure::Util - Zmiana natury danych wewn±trz struktury
 Name:		perl-%{pdir}-%{pnam}
-Version:	0.11
-Release:	2
+Version:	0.12
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	3cbec998cd7c55b1244b3f782569b552
+# Source0-md5:	1af2a4149ba81f42d11dbfaecbaf5973
 URL:		http://search.cpan.org/dist/Data-Structure-Util/
 %if %{with tests}
 BuildRequires:	perl-Clone
