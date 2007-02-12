@@ -6,7 +6,7 @@
 %define	pdir	Data
 %define	pnam	Structure-Util
 Summary:	Data::Structure::Util - Change nature of data within a structure
-Summary(pl):	Data::Structure::Util - Zmiana natury danych wewn±trz struktury
+Summary(pl.UTF-8):   Data::Structure::Util - Zmiana natury danych wewnÄ…trz struktury
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.12
 Release:	1
@@ -37,16 +37,16 @@ circular reference.
 
 It is written in C for decent speed.
 
-%description -l pl
-Data::Structure::Util to zestaw narzêdzi do obróbki danych wewn±trz
-struktur danych. Mo¿e analizowaæ ca³e drzewo i wykonywaæ ¿±dane
-operacje na ka¿dym w³a¶ciwym elemencie. Mo¿e przekszta³caæ na UTF-8
-dowolny ³añcuch wewn±trz struktury danych, a tak¿e próbowaæ
-przekszta³ciæ dowolny ³añcuch z UTF-8 z powrotem do domy¶lnego
-kodowania. Mo¿e usuwaæ b³ogos³awieñstwo z dowolnej referencji. Mo¿e
-zbieraæ wszystkie obiekty lub wykrywaæ czy s± zapêtlone referencje.
+%description -l pl.UTF-8
+Data::Structure::Util to zestaw narzÄ™dzi do obrÃ³bki danych wewnÄ…trz
+struktur danych. MoÅ¼e analizowaÄ‡ caÅ‚e drzewo i wykonywaÄ‡ Å¼Ä…dane
+operacje na kaÅ¼dym wÅ‚aÅ›ciwym elemencie. MoÅ¼e przeksztaÅ‚caÄ‡ na UTF-8
+dowolny Å‚aÅ„cuch wewnÄ…trz struktury danych, a takÅ¼e prÃ³bowaÄ‡
+przeksztaÅ‚ciÄ‡ dowolny Å‚aÅ„cuch z UTF-8 z powrotem do domyÅ›lnego
+kodowania. MoÅ¼e usuwaÄ‡ bÅ‚ogosÅ‚awieÅ„stwo z dowolnej referencji. MoÅ¼e
+zbieraÄ‡ wszystkie obiekty lub wykrywaÄ‡ czy sÄ… zapÄ™tlone referencje.
 
-Jest napisany w C w celu zapewnienia przyzwoitej szybko¶ci.
+Jest napisany w C w celu zapewnienia przyzwoitej szybkoÅ›ci.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
