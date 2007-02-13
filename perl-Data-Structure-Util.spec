@@ -6,7 +6,7 @@
 %define	pdir	Data
 %define	pnam	Structure-Util
 Summary:	Data::Structure::Util - Change nature of data within a structure
-Summary(pl.UTF-8):   Data::Structure::Util - Zmiana natury danych wewnątrz struktury
+Summary(pl.UTF-8):	Data::Structure::Util - Zmiana natury danych wewnątrz struktury
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.12
 Release:	1
