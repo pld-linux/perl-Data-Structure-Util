@@ -56,6 +56,7 @@ Jest napisany w C w celu zapewnienia przyzwoitej szybkości.
 	INSTALLDIRS=vendor
 
 %{__make} \
+	CC="%{__cc}" \
 	OPTIMIZE="%{rpmcflags}"
 
 %{?with_tests:%{__make} test}
