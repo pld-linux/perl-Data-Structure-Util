@@ -9,7 +9,7 @@ Summary:	Data::Structure::Util - Change nature of data within a structure
 Summary(pl.UTF-8):	Data::Structure::Util - Zmiana natury danych wewnątrz struktury
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.12
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
