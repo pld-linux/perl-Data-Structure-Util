@@ -79,7 +79,6 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/Data/Structure/Util.pm
 %dir %{perl_vendorarch}/auto/Data/Structure
 %dir %{perl_vendorarch}/auto/Data/Structure/Util
-%{perl_vendorarch}/auto/Data/Structure/Util/Util.bs
 %{perl_vendorarch}/auto/Data/Structure/Util/autosplit.ix
 %attr(755,root,root) %{perl_vendorarch}/auto/Data/Structure/Util/Util.so
 %{_mandir}/man3/*
