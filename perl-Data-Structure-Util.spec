@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	Data
 %define	pnam	Structure-Util
 Summary:	Data::Structure::Util - Change nature of data within a structure
